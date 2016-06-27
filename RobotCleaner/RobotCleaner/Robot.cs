@@ -1,5 +1,6 @@
 ﻿using RobotCleaner.Interface;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace RobotCleaner
 {
@@ -30,7 +31,8 @@ namespace RobotCleaner
         /// </summary>
         public void Clean()
         {
-            if (!CleanedSpots.Contains(Position))
+            if (!CleanedSpots.Any(cs => cs.PositionX == Position.PositionX 
+                                     && cs.PositionY == Position.PositionY))
             {
                 CleanedSpots.Add(Position);
             }
@@ -39,10 +41,7 @@ namespace RobotCleaner
         /// <summary>
         /// Returns the report of the robot's duty
         /// </summary>
-        /// <returns>The report containing the number of cleaned spots</returns>
-        public string Report()
-        {
-            return $"=> Cleaned: {CleanedSpots.Count}";
-        }
+        /// <value>The report containing the number of cleaned spots</value>
+        public string Report => $"=> Cleaned: {CleanedSpots.Count}";
     }
 }
