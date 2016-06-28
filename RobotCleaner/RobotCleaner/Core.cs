@@ -1,5 +1,4 @@
-﻿using RobotCleaner.Interface;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using static System.Console;
 
 namespace RobotCleaner
@@ -21,7 +20,7 @@ namespace RobotCleaner
                 startingPostion = new Position(int.Parse(startingPostions[0]), int.Parse(startingPostions[1]));
             }
 
-            var directions = new List<ICoordinate>();
+            var directions = new List<Coordinate>();
 
             for (var i = 0; i < numberOfCommands; i++)
             {

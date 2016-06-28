@@ -1,12 +1,13 @@
-namespace RobotCleaner.Interface
+﻿namespace RobotCleaner.Interface
 {
-    public interface ICoordinate
+    public interface ICoordinateService
     {
         /// <summary>
         /// Sets the numbers of times the movements should be done
         /// </summary>
         /// <param name="robot">Robot instance</param>
-        void ExecuteSteps(Robot robot);
+        /// <param name="coordinate">Coordinate with steps and direction</param>
+        void ExecuteSteps(Robot robot, Coordinate coordinate);
 
         /// <summary>
         /// Execute the movement and clean the dirty spot

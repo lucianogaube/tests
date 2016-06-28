@@ -1,5 +1,4 @@
-﻿using RobotCleaner.Interface;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace RobotCleaner
@@ -10,7 +9,7 @@ namespace RobotCleaner
     public class Robot
     {
         public Position Position { get; set; }
-        public IList<ICoordinate> Commands { get; set; }
+        public IList<Coordinate> Commands { get; set; }
         public IList<Position> CleanedSpots;
 
         /// <summary>
@@ -18,7 +17,7 @@ namespace RobotCleaner
         /// </summary>
         /// <param name="initialPosition">Initial Position</param>
         /// <param name="commands">Commands with steps and directions</param>
-        public Robot(Position initialPosition, IList<ICoordinate> commands)
+        public Robot(Position initialPosition, IList<Coordinate> commands)
         {
             Position = initialPosition;
             Commands = commands;
