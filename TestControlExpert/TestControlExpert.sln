@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestControlExpert", "TestControlExpert\TestControlExpert.csproj", "{BBECF584-282D-482B-8EC6-77170BB43A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestControlExpert.Test", "TestControlExpert.Test\TestControlExpert.Test.csproj", "{6A9FBC14-4D13-4D0D-8D33-F2E1E27EA918}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBECF584-282D-482B-8EC6-77170BB43A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBECF584-282D-482B-8EC6-77170BB43A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBECF584-282D-482B-8EC6-77170BB43A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBECF584-282D-482B-8EC6-77170BB43A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9FBC14-4D13-4D0D-8D33-F2E1E27EA918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9FBC14-4D13-4D0D-8D33-F2E1E27EA918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9FBC14-4D13-4D0D-8D33-F2E1E27EA918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9FBC14-4D13-4D0D-8D33-F2E1E27EA918}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
